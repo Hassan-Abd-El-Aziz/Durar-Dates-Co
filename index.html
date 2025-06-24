@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="تمور سعودية فاخرة من قلب مزارع المملكة، نقدم أجود أنواع التمور مثل السكري والخلاص والمجدول، محشوة ومغلفة بأناقة. مثالية للهدايا والمناسبات، طبيعية 100% وخالية من الإضافات. اكتشف الطعم الأصيل للتمور العربية مع درر التمور."
+    />
+    <meta
+      name="description"
+      content="Premium Saudi dates from the heart of the Kingdom's farms. Offering top-quality varieties like Sukkari, Khalas, and Medjool—stuffed and elegantly packaged. Perfect for gifts and occasions. 100% natural, no additives. Discover the authentic taste of Arabian dates with Durar Dates."
+    />
+    <meta
+      name="keywords"
+      content="تمور, تمور سعودية, تمور فاخرة, تمر سكري, تمر خلاص, تمر مجدول, تمور محشوة, هدايا تمور, بيع التمور, مصنع تمور, تمور , درر التمور, تمور طبيعية, تعبئة وتغليف تمور, تصدير التمور, تمور رمضان, تمور عضوية"
+    />
+    <meta
+      name="keywords"
+      content="dates, Saudi dates, premium dates, Sukkari dates, Khalas dates, Medjool dates, stuffed dates, date gifts, date packaging, dates, Durar Dates, natural dates, date export, organic dates, Ramadan dates"
+    />
+
+    <title data-i18n="title">درر التمور | تمور سعودية فاخرة</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <!-- زر الواتساب -->
+    <a href="https://wa.me/966500000000" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- الهيدر -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="img/logoT.png" alt="شعار درر التمور" class="logo-img" />
+          <span class="logo-text" data-i18n="logo">مؤسسة درر التمور</span>
+        </div>
+
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#home" data-i18n="home">الرئيسية</a></li>
+            <li><a href="#about" data-i18n="about">من نحن</a></li>
+            <li><a href="#products" data-i18n="products">منتجاتنا</a></li>
+            <li><a href="#location" data-i18n="location">أين نحن</a></li>
+            <li><a href="#contact" data-i18n="contact">تواصل معنا</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="lang-switch" id="langSwitch">EN</button>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- القائمة الجانبية للهاتف -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home" data-i18n="home">الرئيسية</a></li>
+        <li><a href="#about" data-i18n="about">من نحن</a></li>
+        <li><a href="#products" data-i18n="products">منتجاتنا</a></li>
+        <li><a href="#location" data-i18n="location">أين نحن</a></li>
+        <li><a href="#contact" data-i18n="contact">تواصل معنا</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="lang-switch" id="langSwitchMobile">EN</button>
+        <button class="theme-toggle" id="themeToggleMobile">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero" id="home" data-scroll="fade-in">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 data-i18n="heroTitle">مؤسسة درر التمور</h1>
+          <p data-i18n="heroText">
+            نخبة التمور الفاخرة من أجود مزارع المملكة العربية السعودية، نقدم لكم
+            أجود أنواع التمور بأسعار تنافسية وجودة لا مثيل لها.
+          </p>
+          <a href="#contact" class="cta-btn" data-i18n="contactBtn">اتصل بنا</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="aboutTitle">من نحن</h2>
+        <div class="about-content">
+          <div class="about-text" data-scroll="fade-right">
+            <p data-i18n="aboutText1">
+              تأسست مؤسسة درر التمور عام 2010 كمؤسسة رائدة في مجال تجارة التمور
+              الفاخرة بالمملكة العربية السعودية.
+            </p>
+            <p data-i18n="aboutText2">
+              نفتخر بأننا نقدم أجود أنواع التمور من مزارعنا الخاصة والمختارة
+              بعناية، مع الحفاظ على أعلى معايير الجودة والنظافة.
+            </p>
+            <p data-i18n="aboutText3">
+              لدينا فريق من الخبراء الذين يتابعون عملية الإنتاج من مرحلة النخيل
+              حتى التعبئة والتغليف لضمان وصول منتجاتنا إليكم بأفضل حال.
+            </p>
+          </div>
+          <div class="about-image" data-scroll="fade-left">
+            <img src="img/T3.jpg" alt="تمور فاخرة" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="products" id="products">
+      <div class="container">
+        <h2 class="section-title" data-i18n="productsTitle">منتجاتنا</h2>
+        <div class="products-grid">
+          <!-- المنتج 1 -->
+          <div
+            class="product-card"
+            data-scroll="card-rotate"
+            data-scroll-delay="0"
+          >
+            <div class="product-img-container">
+              <img src="img/T1.webp" alt="تمر العنبرة" class="product-img" />
+            </div>
+            <h3 data-i18n="product1Title">تمر العنبرة</h3>
+            <p data-i18n="product1Desc">
+              من أجود أنواع التمور، يتميز بلونه الذهبي ومذاقه الفريد الغني
+              بالفوائد الغذائية.
+            </p>
+          </div>
+
+          <!-- المنتج 2 -->
+          <div
+            class="product-card"
+            data-scroll="card-rotate"
+            data-scroll-delay="0.1"
+          >
+            <div class="product-img-container">
+              <img src="img/T2.jpg" alt="تمر السكري" class="product-img" />
+            </div>
+            <h3 data-i18n="product2Title">تمر السكري</h3>
+            <p data-i18n="product2Desc">
+              يتميز بحجمه الكبير ولونه البني الفاتح ومذاقه الحلو الطبيعي الذي
+              يجعله من أكثر الأنواع طلباً.
+            </p>
+          </div>
+
+          <!-- المنتج 3 -->
+          <div
+            class="product-card"
+            data-scroll="card-rotate"
+            data-scroll-delay="0"
+          >
+            <div class="product-img-container">
+              <img src="img/T3.jpg" alt="تمر الخضري" class="product-img" />
+            </div>
+            <h3 data-i18n="product3Title">تمر الخضري</h3>
+            <p data-i18n="product3Desc">
+              من التمور المميزة بلونه البني الغامق وقوامه الطري، غني بالألياف
+              والحديد.
+            </p>
+          </div>
+
+          <!-- المنتج 4 -->
+          <div
+            class="product-card"
+            data-scroll="card-rotate"
+            data-scroll-delay="0.1"
+          >
+            <div class="product-img-container">
+              <img src="img/T5.png" alt="تمر الصفاوي" class="product-img" />
+            </div>
+            <h3 data-i18n="product4Title">تمر الصفاوي</h3>
+            <p data-i18n="product4Desc">
+              يتميز بلونه الأسود اللامع وقوامه الناعم، من أكثر التمور غنى
+              بالمعادن والفيتامينات.
+            </p>
+          </div>
+
+          <!-- المنتج 5 -->
+          <div
+            class="product-card"
+            data-scroll="card-rotate"
+            data-scroll-delay="0"
+          >
+            <div class="product-img-container">
+              <img src="img/T6.png" alt="تمر المجدول" class="product-img" />
+            </div>
+            <h3 data-i18n="product5Title">تمر المجدول</h3>
+            <p data-i18n="product5Desc">
+              ملك التمور بحجمه الكبير ومذاقه الفاخر، يتميز بقيمته الغذائية
+              العالية.
+            </p>
+          </div>
+
+          <!-- المنتج 6 -->
+          <div
+            class="product-card"
+            data-scroll="card-rotate"
+            data-scroll-delay="0.1"
+          >
+            <div class="product-img-container">
+              <img src="img/T7.png" alt="خلطة التمور" class="product-img" />
+            </div>
+            <h3 data-i18n="product6Title">خلطة التمور الفاخرة</h3>
+            <p data-i18n="product6Desc">
+              مزيج مميز من أجود أنواع التمور بنسب مدروسة للحصول على تجربة تذوق
+              فريدة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الموقع -->
+    <section class="location" id="location">
+      <div class="container">
+        <h2 class="section-title" data-i18n="locationTitle">أين نحن</h2>
+        <div class="location-content">
+          <div class="location-info" data-scroll="fade-right">
+            <h3 data-i18n="locationInfoTitle">مقر المؤسسة</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="locationAddress"
+                >المملكة العربية السعودية - الرياض - حي العليا</span
+              >
+            </p>
+            <p><i class="fas fa-phone"></i> <span>+966 12 345 6789</span></p>
+            <p>
+              <i class="fas fa-envelope"></i> <span>info@dorar-dates.com</span>
+            </p>
+            <p>
+              <i class="fas fa-clock"></i>
+              <span data-i18n="workingHours"
+                >الأحد - الخميس: 8 صباحاً - 5 مساءً</span
+              >
+            </p>
+            <a
+              href="https://maps.app.goo.gl/78PsMp3nTkh47WLLA"
+              class="direction-btn"
+              target="_blank"
+              data-i18n="getDirections"
+              >احصل على الاتجاهات</a
+            >
+          </div>
+          <div class="location-map" id="map" data-scroll="fade-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17277.589787512923!2d31.431788149999996!3d30.199015349999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sar!2seg!4v1750756220118!5m2!1sar!2seg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contactTitle">تواصل معنا</h2>
+        <div class="contact-content">
+          <form class="contact-form" id="contactForm" data-scroll="fade-right">
+            <div class="form-group">
+              <input type="text" id="name" required />
+              <label for="name" data-i18n="nameLabel">الاسم</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required />
+              <label for="email" data-i18n="emailLabel"
+                >البريد الإلكتروني</label
+              >
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" required></textarea>
+              <label for="message" data-i18n="messageLabel">الرسالة</label>
+            </div>
+            <button type="submit" class="submit-btn" data-i18n="sendBtn">
+              إرسال
+            </button>
+          </form>
+
+          <div class="contact-info" data-scroll="fade-left">
+            <h3 data-i18n="contactInfoTitle">معلومات التواصل</h3>
+            <p data-i18n="contactInfoText">
+              نحن دائماً على استعداد للرد على استفساراتكم وطلباتكم خلال أوقات
+              العمل الرسمية.
+            </p>
+
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="logo">
+              <img src="img/logoT.png" alt="شعار درر التمور" class="logo-img" />
+              <span class="logo-text">درر التمور</span>
+            </div>
+            <p data-i18n="footerAbout">
+              مؤسسة رائدة في تجارة التمور الفاخرة، نقدم أجود الأنواع بمعايير
+              جودة عالية.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3 data-i18n="quickLinks">روابط سريعة</h3>
+            <ul>
+              <li><a href="#home" data-i18n="home">الرئيسية</a></li>
+              <li><a href="#about" data-i18n="about">من نحن</a></li>
+              <li><a href="#products" data-i18n="products">منتجاتنا</a></li>
+              <li><a href="#location" data-i18n="location">أين نحن</a></li>
+              <li><a href="#contact" data-i18n="contact">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 data-i18n="productsFooter">المنتجات</h3>
+            <ul>
+              <li>
+                <a href="#products" data-i18n="product1Title">تمر العنبرة</a>
+              </li>
+              <li>
+                <a href="#products" data-i18n="product2Title">تمر السكري</a>
+              </li>
+              <li>
+                <a href="#products" data-i18n="product3Title">تمر الخضري</a>
+              </li>
+              <li>
+                <a href="#products" data-i18n="product4Title">تمر الصفاوي</a>
+              </li>
+              <li>
+                <a href="#products" data-i18n="product5Title">تمر المجدول</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 data-i18n="contactFooter">تواصل معنا</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="locationAddress">الرياض - حي العليا</span>
+              </li>
+              <li><i class="fas fa-phone"></i> +966 12 345 6789</li>
+              <li><i class="fas fa-envelope"></i> info@dorar-dates.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright" data-i18n="copyright">
+            مؤسسة درر التمور. جميع الحقوق محفوظة. © 2025
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
